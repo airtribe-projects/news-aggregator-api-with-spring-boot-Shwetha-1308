@@ -2,6 +2,7 @@ News Aggregator API
 -------------------
 
 The News Aggregator API is a Spring Boot-based application that allows users to register, log in, and fetch personalized news articles based on their preferences. It uses JWT (JSON Web Tokens) for authentication and integrates with external news APIs to fetch news articles.
+
 ---------------------
 
 Features:
@@ -33,7 +34,9 @@ Proper exception handling for invalid requests, authentication errors, and autho
 6)Input Validation:
 
 Validates user registration and news preference updates using Spring's validation annotations.
+
 ---------------------------------------------------------------
+
 Technologies Used:
 
 1)Spring Boot: Backend framework.
