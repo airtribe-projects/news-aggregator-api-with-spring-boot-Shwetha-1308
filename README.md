@@ -180,6 +180,12 @@ Use the /api/news endpoint with the JWT token to fetch news articles.
 Use the /api/preferences endpoint to update the user's news preferences.
 
 -----------------------------------------------------------------------------
+
+Output:
+
+Check the screenshots for the output.
+
+-----------------------------------------------------------------------------
 Optional Features
 
 Caching: Implement a caching mechanism to reduce the number of calls to external news APIs.
