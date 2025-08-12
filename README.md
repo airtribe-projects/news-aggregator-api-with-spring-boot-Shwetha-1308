@@ -74,6 +74,7 @@ Request Body:
    "username": "testuser",
    "password": "testpassword"
 }
+
 Response:
 
  {
@@ -107,6 +108,7 @@ Method: GET
 Headers:
 
 Authorization: Bearer <token>
+
 Response:
 
 ["sports", "technology"]
@@ -126,9 +128,11 @@ Request Body:
  ["sports", "technology", "health"]
  
 Response:
+
   "Preferences updated successfully"
   
 5. Fetch News Articles
+   
 URL: /api/news
 
 Method: GET
@@ -136,6 +140,7 @@ Method: GET
 Headers:
 
 Authorization: Bearer <token>
+
 Response:
 
   {
@@ -156,4 +161,25 @@ Response:
 
 -----------------------------------------------------------
 
+Testing the API
 
+Register a User:
+
+Use the /api/register endpoint to create a new user.
+
+Log in:
+
+Use the /api/login endpoint to log in and get a JWT token.
+
+Fetch News:
+
+Use the /api/news endpoint with the JWT token to fetch news articles.
+
+Update Preferences:
+
+Use the /api/preferences endpoint to update the user's news preferences.
+
+-----------------------------------------------------------------------------
+Optional Features
+
+Caching: Implement a caching mechanism to reduce the number of calls to external news APIs.
