@@ -53,55 +53,6 @@ Technologies Used:
 
 7)Postman: API testing.
 
-Setup Instructions
-
-Prerequisites
-
-Step 1: Clone the Repository
-
-git clone https://github.com/your-username/news-aggregator-api.git
-cd news-aggregator-api
-
------------------------------------
-
-Step 2: Configure the Application
-
-External API Key:
-
-Sign up for an API key from a news provider (e.g., NewsAPI, GNews, or NewsCatcher).
-
-Update the apiKey variable in the ExternalNewsApiClient class with your API key.
-
------------------------------------
-
-Database Configuration:
-
-The application uses an H2 in-memory database by default.
-
-You can access the H2 console at http://localhost:8080/h2-console.
-
-JDBC URL: jdbc:h2:mem:newsDB
-
-Username: sa
-
-Password: password
-
------------------------------------------
-
-Step 3: Build and Run the Application
-
-Build the Application:
-
- mvn clean install
- 
-Run the Application:
-
-mvn spring-boot:run
-
-Access the Application:
-
-The application will be running at http://localhost:8080.
-
 -------------------------------------------------------
 API Documentation
 
@@ -203,10 +154,6 @@ Response:
       ]
   }
 
-Java 22.
-
-Maven (for dependency management).
-
-Postman (for testing the API).
+-----------------------------------------------------------
 
 
