@@ -163,19 +163,19 @@ Response:
 
 Testing the API
 
-Register a User:
+1)Register a User:
 
 Use the /api/register endpoint to create a new user.
 
-Log in:
+2)Log in:
 
 Use the /api/login endpoint to log in and get a JWT token.
 
-Fetch News:
+3)Fetch News:
 
 Use the /api/news endpoint with the JWT token to fetch news articles.
 
-Update Preferences:
+4)Update Preferences:
 
 Use the /api/preferences endpoint to update the user's news preferences.
 
