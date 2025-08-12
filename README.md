@@ -58,15 +58,21 @@ Setup Instructions
 Prerequisites
 
 Step 1: Clone the Repository
-'''
+
 git clone https://github.com/your-username/news-aggregator-api.git
-cd news-aggregator-api'''
+cd news-aggregator-api
+
+-----------------------------------
+
 Step 2: Configure the Application
+
 External API Key:
 
 Sign up for an API key from a news provider (e.g., NewsAPI, GNews, or NewsCatcher).
 
 Update the apiKey variable in the ExternalNewsApiClient class with your API key.
+
+-----------------------------------
 
 Database Configuration:
 
@@ -80,20 +86,33 @@ Username: sa
 
 Password: password
 
+-----------------------------------------
+
 Step 3: Build and Run the Application
+
 Build the Application:
+
  mvn clean install
+ 
 Run the Application:
 
 mvn spring-boot:run
+
 Access the Application:
 
 The application will be running at http://localhost:8080.
+
+-------------------------------------------------------
 API Documentation
+
 Base URL
+
 http://localhost:8080
+
 Endpoints
+
 1. Register a New User
+   
 URL: /api/register
 
 Method: POST
@@ -109,7 +128,9 @@ Response:
  {
      "message": "User registered successfully"
  }
+ 
 2. Log in a User
+   
 URL: /api/login
 
 Method: POST
@@ -120,11 +141,14 @@ Request Body:
       "username": "testuser",
       "password": "testpassword"
   }
+  
 Response:
     {
         "token": "eyJhbGciOiJIUzI1NiJ9..."
     }
+    
 3. Get User Preferences
+   
 URL: /api/preferences
 
 Method: GET
@@ -135,7 +159,9 @@ Authorization: Bearer <token>
 Response:
 
 ["sports", "technology"]
+
 4. Update User Preferences
+   
 URL: /api/preferences
 
 Method: PUT
@@ -143,11 +169,14 @@ Method: PUT
 Headers:
 
 Authorization: Bearer <token>
+
 Request Body:
 
  ["sports", "technology", "health"]
+ 
 Response:
   "Preferences updated successfully"
+  
 5. Fetch News Articles
 URL: /api/news
 
