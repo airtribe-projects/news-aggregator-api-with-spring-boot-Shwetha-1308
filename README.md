@@ -54,6 +54,101 @@ Technologies Used:
 7)Postman: API testing.
 
 -------------------------------------------------------
+Setup Instructions
+
+Prerequisites
+
+Java 22 installed and configured in your system PATH.
+
+Maven installed for dependency management.
+
+Postman (or any REST client) for testing the API.
+
+An IDE such as IntelliJ IDEA, Eclipse, or VS Code with Java support.
+
+Step 1: Create the Spring Boot Project
+
+Using Spring Initializr Website
+
+Go to https://start.spring.io.
+
+Fill in the details:
+
+Project: Maven
+
+Language: Java
+
+Spring Boot: 3.x.x (latest stable version)
+
+Group: com.example
+
+Artifact: news-aggregator-api
+
+Java Version: 22
+
+Add Dependencies:
+
+Spring Web
+
+Spring Security
+
+Spring Data JPA
+
+H2 Database
+
+Validation
+
+Lombok
+
+Spring Boot DevTools
+
+Click Generate to download the ZIP file.
+
+Extract the ZIP and open the project in your IDE.
+
+Step 2: Configure the Application
+
+External API Key
+
+Sign up for an API key from a news provider (e.g., NewsAPI, GNews, or NewsCatcher).
+
+In the ExternalNewsApiClient class, update:
+
+private String apiKey = "YOUR_API_KEY_HERE";
+
+Database Configuration
+
+By default, the app uses an H2 in-memory database.
+
+Access the H2 console at:
+http://localhost:8080/h2-console
+
+Use these credentials:
+
+JDBC URL: jdbc:h2:mem:newsDB
+
+Username: sa
+
+Password: password
+
+Step 3: Build and Run the Application
+
+Build the Application
+
+mvn clean install
+
+Run the Application
+
+mvn spring-boot:run
+
+Access the Application
+
+API Base URL: http://localhost:8080
+
+H2 Console: http://localhost:8080/h2-console
+
+------------------------------------------------------
+
 API Documentation
 
 Base URL
